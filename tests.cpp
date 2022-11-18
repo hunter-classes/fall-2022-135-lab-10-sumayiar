@@ -80,7 +80,7 @@ void printTimeSlot(TimeSlot ts){
     printMovie(ts.movie); 
     cout << "[starts at "; printTime(ts.startTime); 
     cout << ", ends by "; printTime(addMinutes(ts.startTime, ts.movie.duration));
-    cout << "]";
+    cout << "]" << endl;
 }
 
 TimeSlot scheduleAfter(TimeSlot ts, Movie nextMovie){
@@ -106,14 +106,12 @@ bool timeOverlap(TimeSlot ts1, TimeSlot ts2){
 
 int main(){
     //Task A
-    int hourOne, hourTwo, minuteOne, minuteTwo;
+    int hourOne = 8;
+    int hourTwo = 10;
+    int minuteOne = 30;
+    int minuteTwo = 45;
     Time firstTime = {hourOne, minuteOne};
     Time secondTime = {hourTwo, minuteTwo};
-
-    cout << "Enter first time: " << endl;
-    cin >> hourOne >> minuteOne;
-    cout << "Enter second time: " << endl;
-    cin >> hourTwo >> minuteTwo;
 
     cout << "These moments of time are " << minutesSinceMidnight(firstTime) << " and " << minutesSinceMidnight(secondTime) << " minutes after midnight. The interval between them is " << minutesUntil(firstTime, secondTime) << " minutes." << endl;
     

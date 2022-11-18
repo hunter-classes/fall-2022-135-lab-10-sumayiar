@@ -59,7 +59,7 @@ void getTimeSlot(TimeSlot ts){
     printMovie(ts.movie); 
     cout << "[starts at "; printTime(ts.startTime); 
     cout << ", ends by "; printTime(addMinutes(ts.startTime, ts.movie.duration));
-    cout << "]";
+    cout << "]" << endl;
 }
 
 //Task D

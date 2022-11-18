@@ -5,14 +5,12 @@ using namespace std;
 
 int main(){
     //Task A
-    int hourOne, hourTwo, minuteOne, minuteTwo;
+    int hourOne = 8;
+    int hourTwo = 10;
+    int minuteOne = 30;
+    int minuteTwo = 45;
     Time firstTime = {hourOne, minuteOne};
     Time secondTime = {hourTwo, minuteTwo};
-
-    cout << "Enter first time: " << endl;
-    cin >> hourOne >> minuteOne;
-    cout << "Enter second time: " << endl;
-    cin >> hourTwo >> minuteTwo;
 
     cout << "These moments of time are " << minutesSinceMidnight(firstTime) << " and " << minutesSinceMidnight(secondTime) << " minutes after midnight. The interval between them is " << minutesUntil(firstTime, secondTime) << " minutes." << endl;
     
