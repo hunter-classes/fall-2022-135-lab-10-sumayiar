@@ -1,12 +1,19 @@
 * Fall 2022 - Lab 10
 
-* Last name:
+* Last name: Rashid
 
-* First name:
+* First name: Sumayia 
 
-* GitHub username:
+* GitHub username: sumayiar
 
-* Notes:
+* Notes: I promise you my code compiles and runs. I kept getting an "Undefined symbols for architecture x86_64" error message, but after using these commands in the terminal, my code compiled and ran correctly.
+
+- g++ -c root.cpp
+- g++ -c players.cpp
+- g++ root.o players.o -o run
+- ./run
+
+Tests.cpp also compiles and runs correctly.
 
 
   
